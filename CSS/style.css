@@ -1,0 +1,138 @@
+body {
+    width: 100%;
+    margin-left: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    border-bottom: 1px solid rgb(75, 73, 73);
+    -webkit-box-shadow: 0 8px 6px -6px rgb(75, 73, 73);
+    -moz-box-shadow: 0 8px 6px -6px rgb(75, 73, 73);
+    box-shadow: 0 8px 6px -6px rgb(75, 73, 73);
+
+    margin-bottom: 30px;
+    overflow: auto;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+header h1 {
+    margin-left: 3%;
+    float: left;
+}
+
+header h2 {
+    float: right;
+    margin-right: 3%;
+}
+
+section {
+    margin: 10px;
+    overflow: hidden;
+}
+
+form label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input,
+textarea,
+form button {
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+/* Button to add todos */
+form button {
+    background: rgb(6, 214, 197);
+    height: 45px;
+    width: 150px;
+
+    margin-top: -1%;
+    margin-right: 4%;
+    float: right;
+
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+
+    border: 1px solid rgb(6, 214, 197);
+}
+
+.todos {
+    margin: 0% 12.5% 0% 12.5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.todos div {
+    border: 1px solid white;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(6, 214, 197, 0.1), 0 6px 20px 0 rgba(6, 214, 197, 0.1);
+}
+
+/* Button used to complete todos */
+div button {
+    float: right;
+    padding: 5px;
+    margin: 5px;
+
+    font-weight: bold;
+    color: white;
+    background: rgb(6, 214, 197);
+    border: 1px solid rgb(6, 214, 197);
+}
+
+main h2 {
+    margin-left: 17%;
+}
+
+@media (min-width: 801px) {
+
+    .todos div {
+        flex: 1 1 23%;
+    }
+
+    .form {
+        margin: 3% 30% 3% 30%;
+    }
+
+    input[type="title"] {
+        margin-bottom: 10px;
+        width: 50%;
+        height: 30px;
+    }
+
+    textarea {
+        width: 95%;
+        height: 100px;
+        margin-bottom: 1%;
+    }
+}
+
+@media (max-width: 800px) {
+    .todos div {
+        flex: 1 1 100%;
+    }
+    .form {
+        margin: 3% 20% 3% 20%;
+    }
+
+    input[type="title"] {
+        margin-bottom: 10px;
+        width: 97%;
+        height: 30px;
+    }
+
+    textarea {
+        width: 97%;
+        height: 100px;
+        margin-bottom: 1%;
+    }
+}
